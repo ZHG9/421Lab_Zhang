@@ -1,7 +1,0 @@
-2024-02-09 04:38:32.062 [info] Extension host with pid 2758 started
-2024-02-09 04:38:32.082 [info] Lock '/home/bitnami/.vscode-server/data/User/workspaceStorage/4ea94e984b82d8fc89e98dfd626680b6/vscode.lock': Lock acquired.
-2024-02-09 04:38:32.195 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
-2024-02-09 04:38:32.196 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
-2024-02-09 04:38:32.895 [info] Extension host terminating: received terminate message from renderer
-2024-02-09 04:38:32.896 [info] Lock '/home/bitnami/.vscode-server/data/User/workspaceStorage/4ea94e984b82d8fc89e98dfd626680b6/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
-2024-02-09 04:38:32.897 [info] Extension host with pid 2758 exiting with code 0
