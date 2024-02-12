@@ -226,3 +226,26 @@
 2024-02-12 19:36:07.110 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
 2024-02-12 19:36:07.110 [warning] No such branch: master.
 2024-02-12 19:36:07.192 [info] > git status -z -uall [75ms]
+2024-02-12 19:36:08.840 [info] > git config --get commit.template [8ms]
+2024-02-12 19:36:08.841 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/chapter-04-views refs/remotes/chapter-04-views [2ms]
+2024-02-12 19:36:08.847 [warning] ENOENT: no such file or directory, open '/home/bitnami/getting-MEAN/.git/refs/remotes/origin/chapter-04-views'
+2024-02-12 19:36:08.849 [info] > git rev-parse refs/remotes/origin/chapter-04-views [2ms]
+2024-02-12 19:36:08.857 [info] > git status -z -uall [2ms]
+2024-02-12 19:36:08.984 [info] > git ls-files --stage -- /home/bitnami/blogger/views/home.ejs [2ms]
+2024-02-12 19:36:08.994 [info] > git cat-file -s e7a156659638a453cbc3f95dd2a2de23235d750a [3ms]
+2024-02-12 19:36:09.055 [info] > git show --textconv :blogger/views/home.ejs [3ms]
+2024-02-12 19:36:12.994 [info] No remotes found in the git config file.
+2024-02-12 19:36:12.995 [info] > git config --get commit.template [8ms]
+2024-02-12 19:36:12.995 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2024-02-12 19:36:12.996 [warning] No such branch: master.
+2024-02-12 19:36:13.058 [info] > git status -z -uall [52ms]
+2024-02-12 19:36:18.138 [info] No remotes found in the git config file.
+2024-02-12 19:36:18.139 [info] > git config --get commit.template [10ms]
+2024-02-12 19:36:18.140 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-02-12 19:36:18.329 [info] > git status -z -uall [181ms]
+2024-02-12 19:36:18.647 [info] > git ls-files --stage -- /home/bitnami/blogger/views/home.ejs [4ms]
+2024-02-12 19:36:18.658 [info] > git cat-file -s e7a156659638a453cbc3f95dd2a2de23235d750a [3ms]
+2024-02-12 19:36:18.722 [info] > git show --textconv :blogger/views/home.ejs [4ms]
+2024-02-12 19:36:23.387 [info] No remotes found in the git config file.
+2024-02-12 19:36:23.435 [info] > git config --get commit.template [52ms]
+2024-02-12 19:36:23.444 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [42ms]

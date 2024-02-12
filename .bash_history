@@ -771,3 +771,9 @@ sudo node ./bin/www
 cd
 cd blogger
 sudo node ./bin/www 
+cd blogger
+sudo node ./bin/www 
+cd
+git init
+git add
+git add .
