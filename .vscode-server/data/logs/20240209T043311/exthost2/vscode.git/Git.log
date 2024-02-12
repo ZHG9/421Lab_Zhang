@@ -1,0 +1,114 @@
+2024-02-09 04:33:28.834 [info] Log level: Info
+2024-02-09 04:33:28.834 [info] Validating found git in: "git"
+2024-02-09 04:33:28.834 [info] Using git "2.30.2" from "git"
+2024-02-09 04:33:28.834 [info] > git rev-parse --show-toplevel [22ms]
+2024-02-09 04:33:28.834 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:28.888 [info] > git rev-parse --show-toplevel [53ms]
+2024-02-09 04:33:28.888 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:28.904 [info] > git rev-parse --show-toplevel [7ms]
+2024-02-09 04:33:28.904 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:28.919 [info] > git rev-parse --show-toplevel [2ms]
+2024-02-09 04:33:28.919 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:28.927 [info] > git rev-parse --show-toplevel [1ms]
+2024-02-09 04:33:28.927 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:28.933 [info] > git rev-parse --show-toplevel [1ms]
+2024-02-09 04:33:28.933 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:28.940 [info] > git rev-parse --show-toplevel [1ms]
+2024-02-09 04:33:28.940 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:28.954 [info] > git rev-parse --show-toplevel [7ms]
+2024-02-09 04:33:28.954 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:28.961 [info] > git rev-parse --show-toplevel [2ms]
+2024-02-09 04:33:28.961 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:28.970 [info] > git rev-parse --show-toplevel [3ms]
+2024-02-09 04:33:28.996 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2024-02-09 04:33:29.015 [info] Open repository: /home/bitnami/getting-MEAN
+2024-02-09 04:33:29.112 [info] > git config --get commit.template [56ms]
+2024-02-09 04:33:29.113 [info] > git rev-parse --show-toplevel [35ms]
+2024-02-09 04:33:29.113 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:29.135 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/chapter-04-views refs/remotes/chapter-04-views [25ms]
+2024-02-09 04:33:29.148 [warning] ENOENT: no such file or directory, open '/home/bitnami/getting-MEAN/.git/refs/remotes/origin/chapter-04-views'
+2024-02-09 04:33:29.152 [info] > git rev-parse --show-toplevel [19ms]
+2024-02-09 04:33:29.152 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:29.165 [info] > git rev-parse refs/remotes/origin/chapter-04-views [16ms]
+2024-02-09 04:33:29.176 [info] > git rev-parse --show-toplevel [12ms]
+2024-02-09 04:33:29.176 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:29.193 [info] > git rev-parse --show-toplevel [7ms]
+2024-02-09 04:33:29.193 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:29.213 [info] > git rev-parse --show-toplevel [4ms]
+2024-02-09 04:33:29.213 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:29.225 [info] > git status -z -uall [50ms]
+2024-02-09 04:33:29.245 [info] > git rev-parse --show-toplevel [21ms]
+2024-02-09 04:33:29.246 [info] > git config --get commit.template [2ms]
+2024-02-09 04:33:29.258 [info] > git rev-parse --git-dir --git-common-dir [6ms]
+2024-02-09 04:33:29.262 [info] Open repository: /home/bitnami/todo
+2024-02-09 04:33:29.284 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/chapter-04-views refs/remotes/chapter-04-views [27ms]
+2024-02-09 04:33:29.291 [warning] ENOENT: no such file or directory, open '/home/bitnami/getting-MEAN/.git/refs/remotes/origin/chapter-04-views'
+2024-02-09 04:33:29.291 [info] > git rev-parse --show-toplevel [9ms]
+2024-02-09 04:33:29.291 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:29.296 [info] > git config --get commit.template [19ms]
+2024-02-09 04:33:29.305 [info] > git rev-parse refs/remotes/origin/chapter-04-views [15ms]
+2024-02-09 04:33:29.315 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [14ms]
+2024-02-09 04:33:29.325 [warning] ENOENT: no such file or directory, open '/home/bitnami/todo/.git/refs/remotes/origin/master'
+2024-02-09 04:33:29.325 [info] > git status -z -uall [14ms]
+2024-02-09 04:33:29.333 [info] > git rev-parse refs/remotes/origin/master [9ms]
+2024-02-09 04:33:29.356 [info] > git status -z -uall [16ms]
+2024-02-09 04:33:29.380 [info] > git config --get commit.template [8ms]
+2024-02-09 04:33:29.386 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [7ms]
+2024-02-09 04:33:29.393 [warning] ENOENT: no such file or directory, open '/home/bitnami/todo/.git/refs/remotes/origin/master'
+2024-02-09 04:33:29.397 [info] > git rev-parse refs/remotes/origin/master [5ms]
+2024-02-09 04:33:29.424 [info] > git status -z -uall [6ms]
+2024-02-09 04:33:29.868 [info] > git check-ignore -v -z --stdin [12ms]
+2024-02-09 04:33:29.869 [info] > git check-ignore -v -z --stdin [3ms]
+2024-02-09 04:33:39.463 [info] > git rev-parse --show-toplevel [2ms]
+2024-02-09 04:33:39.463 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:50.304 [info] > git rev-parse --show-toplevel [2ms]
+2024-02-09 04:33:50.304 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:33:50.758 [info] > git rev-parse --show-toplevel [1ms]
+2024-02-09 04:33:50.758 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:34:03.958 [info] > git rev-parse --show-toplevel [31ms]
+2024-02-09 04:34:03.959 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:34:05.634 [info] > git rev-parse --show-toplevel [55ms]
+2024-02-09 04:34:05.634 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:34:08.890 [info] > git rev-parse --show-toplevel [12ms]
+2024-02-09 04:34:08.890 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:34:12.379 [info] > git rev-parse --show-toplevel [1ms]
+2024-02-09 04:34:12.379 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:34:15.036 [info] > git rev-parse --show-toplevel [33ms]
+2024-02-09 04:34:15.037 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:34:25.523 [info] > git check-ignore -v -z --stdin [27ms]
+2024-02-09 04:34:26.630 [info] > git check-ignore -v -z --stdin [1ms]
+2024-02-09 04:34:28.457 [info] > git check-ignore -v -z --stdin [2ms]
+2024-02-09 04:34:30.298 [info] > git check-ignore -v -z --stdin [1ms]
+2024-02-09 04:34:31.695 [info] > git check-ignore -v -z --stdin [2ms]
+2024-02-09 04:34:33.087 [info] > git ls-files --stage -- /home/bitnami/getting-MEAN/public/javascripts/jquery-1.11.1.min.js [8ms]
+2024-02-09 04:34:33.106 [info] > git show --textconv :public/javascripts/jquery-1.11.1.min.js [52ms]
+2024-02-09 04:34:33.122 [info] > git cat-file -s ab28a24729b320bffd3d2f60302af949db39ab85 [17ms]
+2024-02-09 04:35:06.512 [info] > git rev-parse --show-toplevel [74ms]
+2024-02-09 04:35:06.519 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:35:07.569 [info] > git rev-parse --show-toplevel [28ms]
+2024-02-09 04:35:07.569 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:35:13.081 [info] > git check-ignore -v -z --stdin [29ms]
+2024-02-09 04:35:14.947 [info] > git check-ignore -v -z --stdin [2ms]
+2024-02-09 04:35:19.696 [info] > git ls-files --stage -- /home/bitnami/getting-MEAN/public/bootstrap/js/bootstrap.min.js [36ms]
+2024-02-09 04:35:19.719 [info] > git show --textconv :public/bootstrap/js/bootstrap.min.js [77ms]
+2024-02-09 04:35:19.723 [info] > git cat-file -s 0e668e85c612a0b365c209870d9b4d301ff707a6 [11ms]
+2024-02-09 04:35:37.351 [info] > git rev-parse --show-toplevel [76ms]
+2024-02-09 04:35:37.352 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:35:55.839 [info] > git rev-parse --show-toplevel [48ms]
+2024-02-09 04:35:55.853 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:36:14.397 [info] > git rev-parse --show-toplevel [25ms]
+2024-02-09 04:36:14.397 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:36:19.716 [info] > git rev-parse --show-toplevel [93ms]
+2024-02-09 04:36:19.724 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:36:22.468 [info] > git rev-parse --show-toplevel [6ms]
+2024-02-09 04:36:22.468 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:36:23.721 [info] > git rev-parse --show-toplevel [2ms]
+2024-02-09 04:36:23.721 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:36:25.538 [info] > git rev-parse --show-toplevel [19ms]
+2024-02-09 04:36:25.538 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:36:27.098 [info] > git rev-parse --show-toplevel [21ms]
+2024-02-09 04:36:27.098 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:36:29.283 [info] > git rev-parse --show-toplevel [8ms]
+2024-02-09 04:36:29.283 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-09 04:36:34.413 [info] > git rev-parse --show-toplevel [1ms]
+2024-02-09 04:36:34.413 [info] fatal: not a git repository (or any of the parent directories): .git

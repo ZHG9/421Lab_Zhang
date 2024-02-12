@@ -1,0 +1,68 @@
+2024-02-12 07:59:27.511 [info] Log level: Info
+2024-02-12 07:59:27.511 [info] Validating found git in: "git"
+2024-02-12 07:59:27.511 [info] Using git "2.30.2" from "git"
+2024-02-12 07:59:27.511 [info] > git rev-parse --show-toplevel [8ms]
+2024-02-12 07:59:27.511 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.511 [info] > git rev-parse --show-toplevel [26ms]
+2024-02-12 07:59:27.511 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.523 [info] > git rev-parse --show-toplevel [17ms]
+2024-02-12 07:59:27.523 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.591 [info] > git rev-parse --show-toplevel [11ms]
+2024-02-12 07:59:27.591 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.601 [info] > git rev-parse --show-toplevel [3ms]
+2024-02-12 07:59:27.601 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.615 [info] > git rev-parse --show-toplevel [2ms]
+2024-02-12 07:59:27.615 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.624 [info] > git rev-parse --show-toplevel [3ms]
+2024-02-12 07:59:27.624 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.633 [info] > git rev-parse --show-toplevel [3ms]
+2024-02-12 07:59:27.633 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.647 [info] > git rev-parse --show-toplevel [9ms]
+2024-02-12 07:59:27.651 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.672 [info] > git rev-parse --show-toplevel [4ms]
+2024-02-12 07:59:27.672 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.681 [info] > git rev-parse --show-toplevel [2ms]
+2024-02-12 07:59:27.681 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.705 [info] > git rev-parse --show-toplevel [9ms]
+2024-02-12 07:59:27.732 [info] > git rev-parse --git-dir --git-common-dir [8ms]
+2024-02-12 07:59:27.750 [info] Open repository: /home/bitnami/getting-MEAN
+2024-02-12 07:59:27.782 [info] > git config --get commit.template [14ms]
+2024-02-12 07:59:27.785 [info] > git rev-parse --show-toplevel [10ms]
+2024-02-12 07:59:27.785 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.793 [info] > git rev-parse --show-toplevel [3ms]
+2024-02-12 07:59:27.793 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.799 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/chapter-04-views refs/remotes/chapter-04-views [19ms]
+2024-02-12 07:59:27.805 [warning] ENOENT: no such file or directory, open '/home/bitnami/getting-MEAN/.git/refs/remotes/origin/chapter-04-views'
+2024-02-12 07:59:27.806 [info] > git rev-parse --show-toplevel [8ms]
+2024-02-12 07:59:27.806 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.819 [info] > git rev-parse refs/remotes/origin/chapter-04-views [14ms]
+2024-02-12 07:59:27.838 [info] > git rev-parse --show-toplevel [20ms]
+2024-02-12 07:59:27.838 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.856 [info] > git rev-parse --show-toplevel [7ms]
+2024-02-12 07:59:27.856 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.872 [info] > git rev-parse --show-toplevel [6ms]
+2024-02-12 07:59:27.883 [info] > git status -z -uall [51ms]
+2024-02-12 07:59:27.917 [info] > git rev-parse --git-dir --git-common-dir [35ms]
+2024-02-12 07:59:27.923 [info] Open repository: /home/bitnami/todo
+2024-02-12 07:59:27.940 [info] > git config --get commit.template [23ms]
+2024-02-12 07:59:27.942 [info] > git config --get commit.template [7ms]
+2024-02-12 07:59:27.949 [info] > git rev-parse --show-toplevel [10ms]
+2024-02-12 07:59:27.949 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-02-12 07:59:27.964 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/chapter-04-views refs/remotes/chapter-04-views [18ms]
+2024-02-12 07:59:27.972 [warning] ENOENT: no such file or directory, open '/home/bitnami/getting-MEAN/.git/refs/remotes/origin/chapter-04-views'
+2024-02-12 07:59:27.981 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [18ms]
+2024-02-12 07:59:27.990 [warning] ENOENT: no such file or directory, open '/home/bitnami/todo/.git/refs/remotes/origin/master'
+2024-02-12 07:59:27.994 [info] > git rev-parse refs/remotes/origin/master [4ms]
+2024-02-12 07:59:28.013 [info] > git rev-parse refs/remotes/origin/chapter-04-views [41ms]
+2024-02-12 07:59:28.055 [info] > git status -z -uall [42ms]
+2024-02-12 07:59:28.073 [info] > git status -z -uall [50ms]
+2024-02-12 07:59:28.082 [info] > git config --get commit.template [10ms]
+2024-02-12 07:59:28.083 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2024-02-12 07:59:28.104 [warning] ENOENT: no such file or directory, open '/home/bitnami/todo/.git/refs/remotes/origin/master'
+2024-02-12 07:59:28.108 [info] > git rev-parse refs/remotes/origin/master [3ms]
+2024-02-12 07:59:28.121 [info] > git status -z -uall [4ms]
+2024-02-12 07:59:28.490 [info] > git check-ignore -v -z --stdin [7ms]
+2024-02-12 07:59:28.493 [info] > git check-ignore -v -z --stdin [4ms]
+2024-02-12 08:02:19.195 [info] > git check-ignore -v -z --stdin [1ms]
+2024-02-12 08:07:25.666 [info] > git rev-parse --show-toplevel [22ms]
+2024-02-12 08:07:25.666 [info] fatal: not a git repository (or any of the parent directories): .git

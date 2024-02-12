@@ -1,0 +1,52 @@
+{
+    "remote.SSH.showLoginTerminal": true,
+    "remote.SSH.remotePlatform": {
+        "linuxlab": "linux",
+        "csci366.millersville.edu": "linux",
+        "13.58.150.102": "linux"
+    },
+    "code-runner.runInTerminal": true,
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "fish",
+            "args": [
+                "-l"
+            ]
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "dash": {
+            "path": "/bin/dash"
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "dash",
+    "remote.SSH.useLocalServer": false,
+    "reason.codelens.enabled": true,
+    "reason.diagnostics.tools": [
+    
+        "merlin"
+    ],
+    "workbench.colorTheme": "Default Dark+",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "git.confirmSync": false,
+    "git.suggestSmartCommit": false
+}
