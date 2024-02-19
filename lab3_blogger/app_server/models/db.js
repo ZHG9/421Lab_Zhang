@@ -1,9 +1,7 @@
 var mongoose = require( 'mongoose' );
-//require('dotenv').config();
 var gracefulShutdown;
 
-//var dbURI = process.env.DB_URL
-var dbURI = 'mongodb://localhost/blogs';
+var dbURI = 'mongodb://localhost/Blogger';
 
 
 mongoose.connect(dbURI);
