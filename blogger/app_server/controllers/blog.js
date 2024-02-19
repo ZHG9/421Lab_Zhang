@@ -1,6 +1,6 @@
 module.exports.list = function(req, res){
 
-  const blogEntries = [
+  var blogEntries = [
     {
       blogTitle: 'First Blog Post',
       blogText: 'This is the content of the first blog post.',
