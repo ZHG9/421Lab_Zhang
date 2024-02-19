@@ -1,7 +1,9 @@
 var mongoose = require( 'mongoose' );
+//require('dotenv').config();
 var gracefulShutdown;
 
-var dbURI = 'mongodb://localhost/Blogger';
+//var dbURI = process.env.DB_URL
+var dbURI = 'mongodb://localhost/blogs';
 
 
 mongoose.connect(dbURI);
@@ -20,12 +22,27 @@ mongoose.connection.on('error',function (err) {
 mongoose.connection.on('disconnected', function () {
   console.log('Mongoose disconnected');
 }); 
-// Closes (disconnects) from Mongoose DB upon shutdown    
+
+/*
 gracefulShutdown = function (msg, callback) {
   mongoose.connection.close(function () {
     console.log('Mongoose disconnected through ' + msg);
     callback();
   });
+};
+*/
+
+// Closes (disconnects) from Mongoose DB upon shutdown    
+function gracefulShutdown(msg, callback) {
+  mongoose.connection.close()
+      .then(() => {
+          console.log('Mongoose disconnected through ' + msg);
+          callback();
+      })
+      .catch((err) => {
+          console.error('Mongoose disconnection error: ' + err);
+          callback(err);
+      });
 };
 
 // For nodemon restarts
