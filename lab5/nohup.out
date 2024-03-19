@@ -1,34 +1,49 @@
-/home/bitnami/421Lab/lab4/node_modules/express/lib/router/route.js:202
-        throw new Error(msg);
-        ^
-
-Error: Route.get() requires a callback function but got a [object Undefined]
-    at Route.<computed> [as get] (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/route.js:202:15)
-    at proto.<computed> [as get] (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:510:19)
-    at Object.<anonymous> (/home/bitnami/421Lab/lab4/app_api/routes/index.js:7:8)
-    at Module._compile (node:internal/modules/cjs/loader:1356:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
-    at Module.load (node:internal/modules/cjs/loader:1197:32)
-    at Module._load (node:internal/modules/cjs/loader:1013:12)
-    at Module.require (node:internal/modules/cjs/loader:1225:19)
-    at require (node:internal/modules/helpers:177:18)
-    at Object.<anonymous> (/home/bitnami/421Lab/lab4/app.js:12:17)
-
-Node.js v18.19.0
-/home/bitnami/421Lab/lab4/node_modules/express/lib/router/route.js:202
-        throw new Error(msg);
-        ^
-
-Error: Route.get() requires a callback function but got a [object Undefined]
-    at Route.<computed> [as get] (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/route.js:202:15)
-    at proto.<computed> [as get] (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:510:19)
-    at Object.<anonymous> (/home/bitnami/421Lab/lab4/app_api/routes/index.js:7:8)
-    at Module._compile (node:internal/modules/cjs/loader:1356:14)
-    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
-    at Module.load (node:internal/modules/cjs/loader:1197:32)
-    at Module._load (node:internal/modules/cjs/loader:1013:12)
-    at Module.require (node:internal/modules/cjs/loader:1225:19)
-    at require (node:internal/modules/helpers:177:18)
-    at Object.<anonymous> (/home/bitnami/421Lab/lab4/app.js:12:17)
-
-Node.js v18.19.0
+Port 80 is already in use
+[0mGET / [32m200 [0m1.298 ms - 1573[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.616 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.595 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.598 ms - -[0m
+[0mGET /pages/home.html [36m304 [0m0.612 ms - -[0m
+[0mGET /pages/blogList.html [32m200 [0m1.693 ms - 818[0m
+[0mGET /api/blogs [32m200 [0m23.285 ms - 260[0m
+[0mGET /pages/blogAdd.html [32m200 [0m1.391 ms - 909[0m
+[0mGET /api/blogs [36m304 [0m14.190 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.229 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.003 ms - -[0m
+[0mGET /api/blogs [36m304 [0m5.913 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.820 ms - -[0m
+[0mGET / [36m304 [0m0.744 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.654 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.541 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.543 ms - -[0m
+[0mGET /pages/home.html [36m304 [0m0.535 ms - -[0m
+[0mGET /pages/blogList.html [36m304 [0m0.648 ms - -[0m
+[0mGET /api/blogs [36m304 [0m7.746 ms - -[0m
+[0mGET /api/blogs [36m304 [0m6.286 ms - -[0m
+[0mGET /pages/blogAdd.html [36m304 [0m0.537 ms - -[0m
+[0mGET /api/blogs [36m304 [0m4.280 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.298 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.093 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.577 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.818 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.884 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.601 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.822 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.664 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.703 ms - -[0m
+[0mGET /blogList [32m200 [0m1.507 ms - 1573[0m
+[0mGET /bloggerApp.js [36m304 [0m0.974 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.145 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.559 ms - -[0m
+[0mGET /pages/blogList.html [32m200 [0m0.939 ms - 814[0m
+[0mGET /api/blogs [36m304 [0m3.046 ms - -[0m
+[0mGET /pages/blogAdd.html [32m200 [0m0.877 ms - 907[0m
+[0mGET /pages/home.html [36m304 [0m0.567 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.584 ms - -[0m
+[0mGET /pages/blogEdit.html [32m200 [0m1.980 ms - 1573[0m
+[0mGET /blogEdit/65df83a56fa3991bee449513 [32m200 [0m1.076 ms - 1573[0m
+[0mGET / [36m304 [0m0.647 ms - -[0m
+[0mGET /blogEdit/65df83a56fa3991bee449513 [36m304 [0m0.670 ms - -[0m
+[0mGET /blogEdit/65df83a56fa3991bee449513 [36m304 [0m0.682 ms - -[0m
+[0mGET / [36m304 [0m0.506 ms - -[0m
+[0mGET / [36m304 [0m1.502 ms - -[0m

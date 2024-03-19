@@ -1,3 +1,4 @@
+module.exports = app;
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -6,24 +7,30 @@ var logger = require('morgan');
 require('./app_api/models/db');
 
 
-var routes = require('./app_server/routes/index');
+//var routes = require('./app_server/routes/index');
 var routesApi = require('./app_api/routes/index');
 
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname,'./app_server', 'views'));
-app.set('view engine', 'ejs');
+//app.set('views', path.join(__dirname,'./app_server', 'views'));
+//app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'app_client')));
+
+
+//app.use('/', routes);
 app.use('/api', routesApi);
+app.use(function(req, res) {
+  res.sendFile(path.join(__dirname, 'app_client', 'index.html'));
+});  
 
 
 
