@@ -70,3 +70,123 @@ Mongoose connected to mongodb://blogs:blogs@localhost:27017/Blogger
 [0mGET /api/blogs [32m200 [0m3.457 ms - 2[0m
 [0mPOST /api/blogs [32m201 [0m24.282 ms - 117[0m
 [0mGET /api/blogs [32m200 [0m3.723 ms - 119[0m
+[0mGET /api/blogs [32m200 [0m30.336 ms - 119[0m
+[0mGET / [33m404 [0m2.644 ms - 1224[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/421Lab/lab4/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/421Lab/lab4/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/421Lab/lab4/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/421Lab/lab4/app.js:50:7
+    at Layer.handle_error (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/layer.js:67:12)
+[0mGET / [33m404 [0m1.424 ms - 1224[0m
+Error: No default engine was specified and no extension was provided.
+    at new View (/home/bitnami/421Lab/lab4/node_modules/express/lib/view.js:61:11)
+    at Function.render (/home/bitnami/421Lab/lab4/node_modules/express/lib/application.js:570:12)
+    at ServerResponse.render (/home/bitnami/421Lab/lab4/node_modules/express/lib/response.js:1008:7)
+    at /home/bitnami/421Lab/lab4/app.js:50:7
+    at Layer.handle_error (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:315:13)
+    at /home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/index.js:275:10)
+    at Layer.handle_error (/home/bitnami/421Lab/lab4/node_modules/express/lib/router/layer.js:67:12)
+[0mGET / [32m200 [0m3.400 ms - 5610[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.588 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.505 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m1.066 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.527 ms - -[0m
+[0mGET /bloggerApp.js [32m200 [0m0.873 ms - 4284[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.465 ms - -[0m
+[0mGET /api/blogs [36m304 [0m4.023 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.711 ms - -[0m
+[0mGET / [32m200 [0m0.825 ms - 5610[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.569 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.909 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.461 ms - -[0m
+[0mGET /bloggerApp.js [32m200 [0m4.762 ms - 4284[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m8.175 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.374 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.922 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.847 ms - -[0m
+[0mGET / [36m304 [0m0.571 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.424 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.397 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.118 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.399 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.370 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.475 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.945 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.583 ms - -[0m
+[0mGET / [32m200 [0m1.293 ms - 5610[0m
+[0mGET / [36m304 [0m0.603 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.031 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.382 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m2.594 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m1.195 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.536 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.441 ms - -[0m
+[0mGET /api/blogs [36m304 [0m12.051 ms - -[0m
+[0mGET / [32m200 [0m0.807 ms - 5610[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.414 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.651 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.026 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.767 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.415 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.579 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.410 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.784 ms - -[0m
+[0mHEAD /Core/Skin/Login.aspx [32m200 [0m0.872 ms - 5610[0m
+[0mGET / [32m200 [0m0.912 ms - 5610[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.374 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.352 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.437 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.870 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.552 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.336 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.319 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.623 ms - -[0m
+[0mGET /api/blogs/65f9f13f57097bd3ec9d26cf [32m200 [0m5.974 ms - 117[0m
+[0mGET /.env [32m200 [0m1.055 ms - 5610[0m
+[0mPOST / [32m200 [0m3.182 ms - 5610[0m
+[0mGET / [32m200 [0m1.428 ms - 5610[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.233 ms - 111[0m
+[0mGET /css/fontawesome-all.css [32m200 [0m1.595 ms - 51609[0m
+[0mGET /bloggerApp.js [32m200 [0m1.004 ms - 4284[0m
+[0mGET /lib/angular-route.min.js [32m200 [0m1.624 ms - 5720[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m1.821 ms - 140930[0m
+[0mGET /lib/angular.min.js [32m200 [0m2.461 ms - 177366[0m
+[0mGET /favicon.ico [32m200 [0m0.903 ms - 5610[0m
+[0mGET /api/blogs [36m304 [0m2.221 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.216 ms - -[0m
+[0mGET / [32m200 [0m0.875 ms - 5628[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.036 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.560 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.636 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.430 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.071 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.813 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.493 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.163 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.380 ms - -[0m
+[0mGET /api/blogs/65f9f13f57097bd3ec9d26cf [32m200 [0m3.481 ms - 117[0m
+[0mGET /api/blogs [36m304 [0m2.288 ms - -[0m
+[0mGET /api/blogs/65f9f13f57097bd3ec9d26cf [36m304 [0m2.481 ms - -[0m
+[0mPUT /api/blogs/65f9f13f57097bd3ec9d26cf [32m200 [0m7.825 ms - 118[0m
+[0mGET /api/blogs [32m200 [0m2.386 ms - 120[0m
+[0mGET /api/blogs/65f9f13f57097bd3ec9d26cf [32m200 [0m3.773 ms - 118[0m
+[0mGET /api/blogs [36m304 [0m2.209 ms - -[0m
+[0mGET /api/blogs/65f9f13f57097bd3ec9d26cf [36m304 [0m2.911 ms - -[0m
+[0mGET / [32m200 [0m0.824 ms - 5646[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.382 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.450 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.393 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m0.445 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m0.361 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.346 ms - -[0m
+[0mGET /api/blogs/65f9f13f57097bd3ec9d26cf [36m304 [0m4.666 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.193 ms - -[0m

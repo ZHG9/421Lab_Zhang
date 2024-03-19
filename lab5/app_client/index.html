@@ -11,14 +11,14 @@
     <script src="lib/angular-route.min.js"></script>
 </head>
 <body>
-
+    
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary">
         <a class="navbar-brand" href="#!/">My Blog</a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#!/blogList">Blog List</a>
-                <a class="nav-item nav-link" href="#!/blogAdd">Add Blog</a>
+                <a class="nav-item nav-link active" href="#!/blogList">Blog List</a>
+                <a class="nav-item nav-link active" href="#!/blogAdd">Add Blog</a>
             </div>
         </div>
     </nav>
@@ -99,9 +99,9 @@
                     <form ng-submit="vm.updateBlog()" novalidate>
                         <div class="form-group">
                             <label for="blogTitle" class="text-primary">Blog Title</label>
-                            <input type="text" class="form-control" id="blogTitle" ng-model="vm.blog.blogTitle" required>
+                            <input type="text" readonly class="form-control" id="blogTitle" ng-model="vm.blog.blogTitle" required>
                             <label for="blogText" class="text-primary">Blog Text</label>
-                            <textarea class="form-control" id="blogText" rows="3" ng-model="vm.blog.blogText" required></textarea>
+                            <textarea readonly class="form-control" id="blogText" rows="3" ng-model="vm.blog.blogText" required></textarea>
                         </div>
                     <button ng-click="vm.deleteBlog(vm.blog._id)" class="btn btn-danger">Delete</button>
                     <a href="#!/blogList" class="btn btn-secondary">Cancel</a>
