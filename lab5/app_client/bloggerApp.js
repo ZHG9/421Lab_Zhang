@@ -65,17 +65,6 @@ app.controller('HomeController', [function() {
     vm.title = 'Zhang Chen Blog Site';
     vm.message = 'Welcome to my blog site.';
 }]);
-/*
-// BlogListController
-app.controller('BlogListController', ['BlogService', function(BlogService) {
-    var vm = this;
-    BlogService.listBlogs().then(function(response) {
-        vm.blogs = response.data;
-    }, function(error) {
-        vm.message = 'Error fetching blogs';
-    });
-}]);
-*/
 
 // BlogListController
 app.controller('BlogListController', ['BlogService', function(BlogService) {

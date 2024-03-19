@@ -47,3 +47,26 @@ Port 80 is already in use
 [0mGET /blogEdit/65df83a56fa3991bee449513 [36m304 [0m0.682 ms - -[0m
 [0mGET / [36m304 [0m0.506 ms - -[0m
 [0mGET / [36m304 [0m1.502 ms - -[0m
+Mongoose connected to mongodb://blogs:blogs@localhost:27017/Blogger
+[0mGET / [36m304 [0m3.685 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.945 ms - -[0m
+[0mGET /lib/angular.min.js [36m304 [0m2.080 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.792 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.749 ms - -[0m
+[0mGET /lib/angular-route.min.js [36m304 [0m1.249 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.668 ms - -[0m
+[0mGET /api/blogs [36m304 [0m11.478 ms - -[0m
+[0mGET /api/blogs [36m304 [0m5.731 ms - -[0m
+[0mGET /api/blogs [36m304 [0m3.162 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.957 ms - -[0m
+[0mGET /api/blogs/65f9edc65f305411211ee392 [36m304 [0m4.579 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.894 ms - -[0m
+[0mGET /api/blogs/65f9edc65f305411211ee392 [36m304 [0m3.959 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.972 ms - -[0m
+[0mGET /api/blogs/65f9edc65f305411211ee392 [36m304 [0m3.232 ms - -[0m
+[0mGET /api/blogs [36m304 [0m2.982 ms - -[0m
+[0mGET /api/blogs/65f9edc65f305411211ee392 [36m304 [0m3.229 ms - -[0m
+[0mDELETE /api/blogs/65f9edc65f305411211ee392 [32m204 [0m12.579 ms - -[0m
+[0mGET /api/blogs [32m200 [0m3.457 ms - 2[0m
+[0mPOST /api/blogs [32m201 [0m24.282 ms - 117[0m
+[0mGET /api/blogs [32m200 [0m3.723 ms - 119[0m
