@@ -1,5 +1,5 @@
 {
-  "name": "lab4",
+  "name": "lab5",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,8 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2",
     "bootstrap": "^4.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
