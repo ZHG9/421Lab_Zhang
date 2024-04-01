@@ -30,13 +30,13 @@ app.config(['$routeProvider', function($routeProvider) {
             controllerAs: 'vm'
         })
         .when('/register', {
-            templateUrl: '/register.html',
+            templateUrl: 'register.html',
             controller: 'RegisterController',
             controllerAs: 'vm'
         })
 
         .when('/login', {
-            templateUrl: '/login.html',
+            templateUrl: 'login.html',
             controller: 'LoginController',
             controllerAs: 'vm'
         })
@@ -95,25 +95,31 @@ app.controller('HomeController', [function() {
     vm.message = 'Welcome to my blog site.';
 }]);
 
-// BlogListController
-app.controller('BlogListController', ['BlogService', function(BlogService) {
+app.controller('BlogListController', ['BlogService', 'authentication', function(BlogService, authentication) {
     var vm = this;
     vm.message = ''; // Initialize an empty message
+    vm.isLoggedIn = authentication.isLoggedIn(); // Check if the user is logged in
 
     BlogService.listBlogs().then(function(response) {
         if (!Array.isArray(response.data) || !response.data.length) {
             // If the response does not contain an array or the array is empty,
             // set a 'no blogs' message
-            vm.message = 'No blogs to display. Add one above.';
+            vm.message = 'No blogs to display.';
         } else {
             // If there are blogs, assign them to vm.blogs
-            vm.blogs = response.data;
+            vm.blogs = response.data.map(function(blog) {
+                // Additional logic can be added here, for example, adding an 'editable' property
+                // to each blog if the current user is the author (this requires user info in blogs)
+                blog.editable = vm.isLoggedIn && blog.author === authentication.currentUser().email;
+                return blog;
+            });
         }
     }, function(error) {
         // In case of an error, set an error message
         vm.message = 'Error fetching blogs';
     });
 }]);
+
 
 // BlogAddController
 app.controller('BlogAddController', ['BlogService', '$location', 'authentication', function(BlogService, $location, authentication) {
