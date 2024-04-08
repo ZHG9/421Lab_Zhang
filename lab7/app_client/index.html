@@ -35,14 +35,16 @@
                 <div class="card-body">
                     <p class="card-text">{{ blog.blogText }}</p>
                     <p class="card-text">
-                        <small class="text-muted">Created on {{ blog.createdOn | date:'mediumDate' }}</small>
+                        <small class="text-muted">Pubulished by <strong>{{ blog.author.name }}</strong> on {{ blog.createdOn | date:'MM/dd/yyyy hh:mm:a' }}</small>
                     </p>
-                    <a ng-href="#!/blogEdit/{{ blog._id }}" class="btn btn-primary">Edit</a>
-                    <a ng-href="#!/blogDelete/{{ blog._id }}" class="btn btn-danger">Delete</a>
+                    <div ng-if="vm.isLoggedIn() && blog.isAuthor">
+                        <a ng-href="#!/blogEdit/{{ blog._id }}" class="btn btn-primary">Edit</a>
+                        <a ng-href="#!/blogDelete/{{ blog._id }}" class="btn btn-danger">Delete</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </script>
+    </script>    
 
     <script type="text/ng-template" id="blogAdd.html">
         <div class="container mt-5 pt-5">

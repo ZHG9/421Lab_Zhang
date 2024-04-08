@@ -38,7 +38,11 @@ module.exports.blogCreate = function(req, res) {
 
   Blog.create({
     blogTitle: req.body.blogTitle,
-    blogText: req.body.blogText
+    blogText: req.body.blogText,
+    author: {
+      name: req.body.author.name,
+      email: req.body.author.email
+    }
   })
   .then(blog => sendJSONresponse(res, 201, blog))
   .catch(err => handleError(res, err));

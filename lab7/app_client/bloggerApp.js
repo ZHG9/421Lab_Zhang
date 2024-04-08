@@ -68,7 +68,14 @@ app.service('BlogService', ['$http', 'authentication', function($http, authentic
     };
 
     this.addBlog = function(blog) {
-        // Adding a blog requires authentication
+        if (!authentication.isLoggedIn()) {
+          throw new Error('User is not logged in.');
+        }
+        const currentUser = authentication.currentUser();
+        blog.author = {
+          name: currentUser.name,
+          email: currentUser.email
+        };
         return $http.post(apiBaseUrl, blog, Headers());
     };
 
@@ -95,29 +102,33 @@ app.controller('HomeController', [function() {
     vm.message = 'Welcome to my blog site.';
 }]);
 
+// BlogListController
 app.controller('BlogListController', ['BlogService', 'authentication', function(BlogService, authentication) {
     var vm = this;
-    vm.message = ''; // Initialize an empty message
-    vm.isLoggedIn = authentication.isLoggedIn(); // Check if the user is logged in
+    vm.message = '';
+    vm.isLoggedIn = authentication.isLoggedIn;
+    vm.currentUserEmail = vm.isLoggedIn() ? authentication.currentUser().email : '';
 
-    BlogService.listBlogs().then(function(response) {
-        if (!Array.isArray(response.data) || !response.data.length) {
-            // If the response does not contain an array or the array is empty,
-            // set a 'no blogs' message
-            vm.message = 'No blogs to display.';
-        } else {
-            // If there are blogs, assign them to vm.blogs
+    vm.loadBlogs = function() {
+        BlogService.listBlogs().then(function(response) {
             vm.blogs = response.data.map(function(blog) {
-                // Additional logic can be added here, for example, adding an 'editable' property
-                // to each blog if the current user is the author (this requires user info in blogs)
-                blog.editable = vm.isLoggedIn && blog.author === authentication.currentUser().email;
+                blog.isAuthor = vm.isLoggedIn() && vm.currentUserEmail === blog.author.email;
                 return blog;
             });
-        }
-    }, function(error) {
-        // In case of an error, set an error message
-        vm.message = 'Error fetching blogs';
-    });
+
+            if (vm.blogs.length === 0) {
+                vm.message = 'No blogs to display.';
+            }
+        }, function(error) {
+            vm.message = 'Error fetching blogs: ';
+        });
+    };
+
+    if (vm.isLoggedIn()) {
+        vm.loadBlogs(); // Load blogs only if the user is logged in
+    } else {
+        vm.message = 'Please log in to see the blog posts.';
+    }
 }]);
 
 
