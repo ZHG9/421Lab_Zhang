@@ -63,21 +63,17 @@
                     <p class="card-text">
                         <small class="text-muted"><span style="font-style: italic;">Published by <strong>{{ vm.blog.author.name }}</strong> on {{ vm.blog.createdOn | date:'dd/MM/yyyy h:mm a' }}</small></span>
                     </p>
-                    <!-- Display Average Rating -->
                     <p class="card-text">Average Rating: <span class="badge badge-info">{{ vm.blog.rating.average | number:1 }}</span></p>
-                    <!-- Comments Section -->
                     <div ng-repeat="comment in vm.blog.comments" class="card mb-2">
                         <div class="card-body">
                             <p class="card-text"><strong>{{ comment.author.name }}</strong> : {{ comment.message }}</p>
                             <button ng-if="vm.isLoggedIn() && comment.author.email === vm.currentUser.email" ng-click="vm.deleteComment(comment._id)" class="btn btn-warning btn-sm">Delete</button>
                         </div>
                     </div>
-                    <!-- Add Comment Section -->
                     <div ng-if="vm.isLoggedIn()" class="mt-4">
                         <textarea ng-model="vm.newComment" class="form-control mb-2" placeholder="Add a comment..."></textarea>
                         <button ng-click="vm.addComment()" class="btn btn-primary btn rounded-pill btn-sm">Submit Comment</button>
                     </div>
-                    <!-- Rating Section -->
                     <div ng-if="vm.isLoggedIn()" class="mt-4">
                         <label for="ratingSlider" class="form-label">Rate this blog: {{vm.newRating}}</label>
                         <input type="range" class="form-range" id="ratingSlider" min="1" max="5" ng-model="vm.newRating">
