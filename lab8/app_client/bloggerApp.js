@@ -225,7 +225,7 @@ app.controller('BlogDeleteController', ['$routeParams', 'BlogService', '$locatio
 }]);
 
 // BlogDetailController
-app.controller('BlogDetailController', ['BlogService', 'authentication', '$routeParams', function(BlogService, authentication, $routeParams) {
+app.controller('BlogDetailController', ['BlogService', 'authentication', '$routeParams', '$interval', '$scope', function(BlogService, authentication, $routeParams, $interval, $scope) {
     var vm = this;
 
     vm.blog = {};
@@ -266,7 +266,7 @@ app.controller('BlogDetailController', ['BlogService', 'authentication', '$route
             console.error('Error deleting comment:', error);
           });
         }
-      };
+    };
       
     vm.rateBlog = function() {
         if (vm.isLoggedIn() && vm.newRating > 0) {
@@ -278,6 +278,15 @@ app.controller('BlogDetailController', ['BlogService', 'authentication', '$route
             });
         }
     };
+
+    // Set interval to refresh blog details every 1 second  
+    var refreshInterval = $interval(vm.loadBlogDetails, 1000);
+
+    $scope.$on('$destroy', function() {
+        if (refreshInterval) {
+            $interval.cancel(refreshInterval);
+        }
+    });
 
     vm.loadBlogDetails();
 }]);
