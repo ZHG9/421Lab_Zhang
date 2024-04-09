@@ -225,6 +225,7 @@ app.controller('BlogDeleteController', ['$routeParams', 'BlogService', '$locatio
 }]);
 
 // BlogDetailController
+// Add $interval
 app.controller('BlogDetailController', ['BlogService', 'authentication', '$routeParams', '$interval', '$scope', function(BlogService, authentication, $routeParams, $interval, $scope) {
     var vm = this;
 
